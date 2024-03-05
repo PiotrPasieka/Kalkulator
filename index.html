@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosty kalkulator</title>
+    <script>
+        function suma() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a + b;
+        }
+        function roznica() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a - b;
+
+        }
+        function mnozenie() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a * b;
+
+        }
+        function dzielenie() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML = a / b;
+        }
+    </script>
+</head>
+
+<body style="background-color: #5e5b5b; color: #53ec0c">
+    <center>
+
+        <h1 style="text-align:center;">Prosty kalkulator</h1>
+        <h2> </h2>
+        <input type="text" id="a" value="0" dir="rtl">
+        <input type="text" id="b" value="0" dir="rtl">
+        <div id="wynik"> TU BĘDZIE WYNIK:</div>
+        <button onclick="suma()">+</button>
+        <button onclick="roznica()">-</button>
+        <button onclick="mnozenie()">*</button>
+        <button onclick="dzielenie()">:</button>
+    </center>
+
+
+
+
+</body>
+
+</html>
